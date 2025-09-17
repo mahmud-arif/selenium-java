@@ -21,7 +21,7 @@ public class ExampleScraper {
             ChromeOptions options = new ChromeOptions();
             
             // Set Chromium binary location
-            String chromiumPath = getChromiumPath();
+            String chromiumPath = "/usr/local/bin/chromium"
             if (chromiumPath != null) {
                 options.setBinary(chromiumPath);
                 System.out.println("Using Chromium binary: " + chromiumPath);
