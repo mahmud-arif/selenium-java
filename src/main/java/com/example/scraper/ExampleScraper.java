@@ -1,5 +1,6 @@
 package com.example.scraper;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
@@ -17,7 +18,7 @@ public class ExampleScraper {
         
         try {
             // Setup ChromeDriver automatically (works with Chromium too)
-            WebDriverManager.chromedriver().setup();
+            WebDriverManager.chromiumdriver().setup();
             
             // Set up Chromium options for headless mode
             ChromeOptions options = new ChromeOptions();
